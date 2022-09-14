@@ -375,6 +375,8 @@ func createMigrationPod(ctx context.Context, clientset k8sclient.Interface, ns s
 						"-v",       // show verbose output
 						"-P",       // show progress, and resume aborted/partial transfers
 						"--delete", // delete files in dest that are not in source
+						"--ignore-errors",
+						"--exclude=.snapshot",
 						"/source/",
 						"/dest",
 					},
