@@ -1,4 +1,4 @@
-module github.com/replicatedhq/pvmigrate
+module github.com/ledroide/pvmigrate
 
 go 1.17
 

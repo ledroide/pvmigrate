@@ -9,7 +9,7 @@ spec:
       matchLabels:
         os: linux
         arch: amd64
-    {{addURIAndSha "https://github.com/replicatedhq/pvmigrate/releases/download/{{ .TagName }}/pvmigrate_linux_amd64.tar.gz" .TagName }}
+    {{addURIAndSha "https://github.com/ledroide/pvmigrate/releases/download/{{ .TagName }}/pvmigrate_linux_amd64.tar.gz" .TagName }}
     files:
     - from: pvmigrate
       to: .
@@ -20,7 +20,7 @@ spec:
       matchLabels:
         os: darwin
         arch: amd64
-    {{addURIAndSha "https://github.com/replicatedhq/pvmigrate/releases/download/{{ .TagName }}/pvmigrate_darwin_amd64.tar.gz" .TagName }}
+    {{addURIAndSha "https://github.com/ledroide/pvmigrate/releases/download/{{ .TagName }}/pvmigrate_darwin_amd64.tar.gz" .TagName }}
     files:
     - from: pvmigrate
       to: .
@@ -31,7 +31,7 @@ spec:
       matchLabels:
         os: windows
         arch: amd64
-    {{addURIAndSha "https://github.com/replicatedhq/pvmigrate/releases/download/{{ .TagName }}/pvmigrate_windows_amd64.zip" .TagName }}
+    {{addURIAndSha "https://github.com/ledroide/pvmigrate/releases/download/{{ .TagName }}/pvmigrate_windows_amd64.zip" .TagName }}
     files:
     - from: pvmigrate.exe
       to: .
@@ -39,7 +39,7 @@ spec:
       to: .
     bin: pvmigrate.exe
   shortDescription: Migrates PVs between StorageClasses
-  homepage: https://github.com/replicatedhq/pvmigrate
+  homepage: https://github.com/ledroide/pvmigrate
   description: |
     This plugin migrates PVs from one StorageClass to another, changing
     PVCs and restarting pods as required.
@@ -51,4 +51,3 @@ spec:
 
     For additional options:
       $ kubectl pvmigrate --help
-

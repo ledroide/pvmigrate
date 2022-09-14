@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-VERSION_PACKAGE = github.com/replicatedhq/pvmigrate/pkg/version
+VERSION_PACKAGE = github.com/ledroide/pvmigrate/pkg/version
 VERSION ?=`git describe --tags --dirty`
 DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
 
