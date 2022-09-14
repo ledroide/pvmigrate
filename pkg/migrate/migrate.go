@@ -52,7 +52,7 @@ func Cli() {
 
 	flag.StringVar(&options.SourceSCName, "source-sc", "", "storage provider name to migrate from")
 	flag.StringVar(&options.DestSCName, "dest-sc", "", "storage provider name to migrate to")
-	flag.StringVar(&options.RsyncImage, "rsync-image", "eeacms/rsync:2.3", "the image to use to copy PVCs - must have 'rsync' on the path")
+	flag.StringVar(&options.RsyncImage, "rsync-image", "docker.io/eeacms/rsync:2.3", "the image to use to copy PVCs - must have 'rsync' on the path")
 	flag.StringVar(&options.Namespace, "namespace", "", "only migrate PVCs within this namespace")
 	flag.BoolVar(&options.SetDefaults, "set-defaults", false, "change default storage class from source to dest")
 	flag.BoolVar(&options.VerboseCopy, "verbose-copy", false, "show output from the rsync command used to copy data between PVCs")
